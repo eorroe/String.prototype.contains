@@ -1,5 +1,4 @@
 # `String.prototype.contains` proposal
-Check if string contains any of a list of strings.
 
 ## Problem
 
