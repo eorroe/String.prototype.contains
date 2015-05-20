@@ -4,7 +4,7 @@
 
 Let's say I want to check whether a string has at least one of the strings in an array.
 
-In ES5 (Not using an array)
+In ES5
 ```JS
 var str = 'Hello this is a string';
 
