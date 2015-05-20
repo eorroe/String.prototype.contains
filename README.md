@@ -21,6 +21,7 @@ str.includes('Hello') || str.includes('is'); // true
 
 So what happens if I want to do this with a bunch of strings `String.prototype.contains` to the rescue:
 
+# Solution
 ```JS
 var str = 'Hello this is a string';
 
@@ -36,6 +37,24 @@ var str = 'Hello this is a string';
 
 // Passing an array of strings where none are included in string that contains is called on
 str.contains(['notInString']); // false
+```
+
+`String.prototype.contains` has a second parameter which is the index from where to check if any of the strings in the array are included:
+
+```JS
+var str = 'Hello this is a string';
+
+// As before
+str.contains(['Hello']); // true
+// With Index
+str.contains(['Hello'], 1); // false
+
+// Multiple strings
+
+// As before
+str.contains(['Hello', 'is']); // true
+// With Index
+str.contains(['Hello', 'is'], 1); // true
 ```
 
 Check out [`String.prototype.containsAll`](https://github.com/eorroe/String.prototype.containsAll) proposal
