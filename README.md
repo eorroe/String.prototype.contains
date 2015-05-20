@@ -2,7 +2,7 @@
 
 ## Problem
 
-Let's say I want to check whether a string has at least one of the strings in an array.
+Let's say I want to check whether a string contains at least one other string from many:
 
 In ES5
 ```JS
